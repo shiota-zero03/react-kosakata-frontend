@@ -1,0 +1,19 @@
+// Bootstrap
+    $primary : #F5DF4D;
+    $success: #5960A0;
+    $danger: #BD5C3F;
+    $info: #925188;
+    $dark: #000;
+    $light: rgb(230, 230, 230);
+    $secondary: gray;
+    $warning: yellow;
+    $white: #fff;
+
+    @import "~bootstrap/scss/bootstrap";
+
+// font
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+.font-salsa {
+  font-family: 'Salsa', cursive;
+}
