@@ -5,15 +5,162 @@
     $info: #925188;
     $dark: #000;
     $light: rgb(230, 230, 230);
-    $secondary: gray;
+    $secondary: #9A8354;
     $warning: yellow;
     $white: #fff;
 
     @import "~bootstrap/scss/bootstrap";
 
+// position
+.right-0{
+  right: 0;
+}
+
+.navbar-menu{
+  background-color: #ffffff20;
+}
+
 // font
 @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+$font-salsa: 'Salsa', cursive;
+$font-roboto: 'Roboto', sans-serif;
+
+*{
+  font-family: $font-roboto;
+}
 .font-salsa {
-  font-family: 'Salsa', cursive;
+  font-family: $font-salsa;
+}
+.font-roboto {
+  font-family: $font-roboto;
+}
+
+
+
+// position
+.middle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// slick
+
+.slick-arrow.slick-next{
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  z-index: 1;
+}
+.slick-arrow.slick-prev{
+  z-index: 1;
+  background-color: #5960A0;
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.kos-category{
+  img{
+    transition: .2s ease-in-out;
+  }
+}
+.kos-category:hover{
+  img{
+    filter: brightness(50%);
+    transition: .2s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 992.1px) {
+  .cover-dropdown{
+    form{
+      input{
+        border: 0;
+        border-bottom: 2px solid $dark;
+      }
+    }
+  }
+  .slider-banner{
+    h1{
+      font-size: 5rem;
+      line-height: 84px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .cover-dropdown{
+    border: 1px solid $primary;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: $dark;
+
+    form {
+      input{
+        color: $primary;
+        border: 1px solid $primary;
+        border-radius: 10px;
+      }
+      input::placeholder{
+        color: $primary;
+        opacity: 50%;
+      }
+      button{
+        right: 5%;
+        color: $primary;
+      }
+    }
+
+    .menu-dropdown {
+      border-bottom: 1px solid $primary;
+      text-align: center;
+    }
+  }
+  .slider-banner{
+    h1{
+      font-size: 4rem;
+      line-height: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .cover-dropdown{
+    border: 1px solid $primary;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: $dark;
+
+    form {
+      input{
+        color: $primary;
+        border: 1px solid $primary;
+        border-radius: 10px;
+      }
+      input::placeholder{
+        color: $primary;
+        opacity: 50%;
+      }
+      button{
+        right: 5%;
+        color: $primary;
+      }
+    }
+
+    .menu-dropdown {
+      border-bottom: 1px solid $primary;
+      text-align: center;
+    }
+  }
+  .slider-banner{
+    h1{
+      font-size: 1.3rem;
+      line-height:24px;
+    }
+  }
 }
